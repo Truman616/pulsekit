@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulseKit - Production-Ready Automation Tools & Python Scripts</title>
+    <meta name="description" content="Production-ready Python scripts, API wrappers, and automation tools for developers and operators who need to move fast. No enterprise bloat — just sharp, deployable code that gets the job done.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- PrismJS for Syntax Highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="radial-grid"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container navbar">
+            <div class="logo-group">
+                <img src="https://assets-2-prod.whop.com/public/uploads/user_30062992/image/ai_prompts/2026-06-28/7ac61c76-5fa2-4563-8326-c59676e24056.png" alt="PulseKit Logo" class="logo-img">
+                <span class="logo-text">Pulse<span>Kit</span></span>
+            </div>
+            <nav class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#code-showcase">Code Library</a>
+                <a href="#creator">Creator</a>
+                <a href="https://whop.com/joined/pulsekit-d90e/" target="_blank" class="btn-primary nav-cta">
+                    <span>Join on Whop</span>
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav">
+        <a href="#features">Features</a>
+        <a href="#code-showcase">Code Library</a>
+        <a href="#creator">Creator</a>
+        <a href="https://whop.com/joined/pulsekit-d90e/" target="_blank" class="btn-primary">
+            <span>Join on Whop</span>
+            <i data-lucide="arrow-up-right"></i>
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="pulse-dot"></span>
+                    <span>Ready to deploy script library</span>
+                </div>
+                <h1>Move Fast.<br>Deploy Sharp Code.</h1>
+                <p class="hero-pitch">Production-ready Python scripts, API wrappers, and automation tools for developers and operators who need to move fast. No enterprise bloat — just sharp, deployable code that gets the job done.</p>
+                <div class="hero-actions">
+                    <a href="https://whop.com/joined/pulsekit-d90e/" target="_blank" class="btn-primary btn-lg glow-effect">
+                        <span>Access PulseKit Now</span>
+                        <i data-lucide="zap"></i>
+                    </a>
+                    <a href="#code-showcase" class="btn-secondary btn-lg">
+                        <span>View Library Samples</span>
+                    </a>
+                </div>
+                <div class="hero-metrics">
+                    <div class="metric">
+                        <span class="metric-num">0%</span>
+                        <span class="metric-label">Enterprise Bloat</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-num">Instant</span>
+                        <span class="metric-label">Deployment</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-num">100%</span>
+                        <span class="metric-label">Production Tested</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="terminal-frame">
+                    <div class="terminal-header">
+                        <div class="window-controls">
+                            <span class="control close"></span>
+                            <span class="control minimize"></span>
+                            <span class="control expand"></span>
+                        </div>
+                        <span class="terminal-title">pulsekit_runner.py</span>
+                    </div>
+                    <div class="terminal-body">
+                        <pre><code class="language-python"># Initialize the PulseKit engine
+from pulsekit import TelegramWrapper, ResilienceAPI
+
+# Configured for high throughput and auto-retry
+api = ResilienceAPI(
+    retries=3,
+    backoff_factor=1.5,
+    fallback_to_cache=True
+)
+
+def run_automation():
+    print("[PulseKit] Loading task orchestration...")
+    # Clean, lightweight, hyper-focused wrapper calls
+    response = api.get("https://api.pulsekit.dev/v1/jobs")
+    
+    if response.is_healthy:
+        print(f"✔ Actionable tasks retrieved: {len(response.data)}")
+        # Dispatch automation hooks
+        
+run_automation()</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Info / Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Developers Choose PulseKit</h2>
+                <p>Engineered for high performance, ease of use, and quick integrations.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <h3>Production-Ready</h3>
+                    <p>Every script is built with resilient error-handling, custom rate limit managers, and graceful fallback models.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="cpu"></i>
+                    </div>
+                    <h3>No Enterprise Bloat</h3>
+                    <p>Skip massive SDKs and multi-tiered setups. Pure Python files you can copy, paste, adapt, and run in seconds.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="rocket"></i>
+                    </div>
+                    <h3>Instant Execution</h3>
+                    <p>Designed for operators who need results today. Pre-wrapped APIs, pre-packaged automation webhooks, and template orchestrators.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Code Showcase -->
+    <section id="code-showcase" class="code-showcase-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sharp, Battle-Tested Snippets</h2>
+                <p>Toggle through some of our modular utilities. Paste them straight into your stack.</p>
+            </div>
+            
+            <div class="showcase-container">
+                <div class="tab-list">
+                    <button class="tab-btn active" data-tab="discord">
+                        <i data-lucide="message-square"></i>
+                        <span>Discord Hook</span>
+                    </button>
+                    <button class="tab-btn" data-tab="scraper">
+                        <i data-lucide="search"></i>
+                        <span>Resilient Scraper</span>
+                    </button>
+                    <button class="tab-btn" data-tab="notifier">
+                        <i data-lucide="bell"></i>
+                        <span>Stripe Alert</span>
+                    </button>
+                    <button class="tab-btn" data-tab="scheduler">
+                        <i data-lucide="clock"></i>
+                        <span>Micro-Scheduler</span>
+                    </button>
+                </div>
+                
+                <div class="tab-content active" id="tab-discord">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <span class="file-name">discord_notifier.py</span>
+                            <button class="copy-btn" data-target="code-discord">
+                                <i data-lucide="copy"></i>
+                                <span>Copy Code</span>
+                            </button>
+                        </div>
+                        <pre><code class="language-python" id="code-discord">import requests
+import time
+
+class DiscordNotifier:
+    def __init__(self, webhook_url: str):
+        self.url = webhook_url
+
+    def send_alert(self, title: str, description: str, color: int = 15548997):
+        """Sends a structured rich embed. Auto-handles API rate limits."""
+        payload = {
+            "embeds": [{
+                "title": title,
+                "description": description,
+                "color": color,
+                "timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+            }]
+        }
+        response = requests.post(self.url, json=payload)
+        
+        # Handle Rate Limiting gracefully
+        if response.status_code == 429:
+            retry_after = response.json().get("retry_after", 5)
+            print(f"⚠ Rate limited. Retrying in {retry_after} seconds...")
+            time.sleep(retry_after)
+            return self.send_alert(title, description, color)
+            
+        return response.status_code == 204
+
+# Instant Usage:
+# notifier = DiscordNotifier("YOUR_WEBHOOK_URL")
+# notifier.send_alert("System Health Peak", "Server memory usage normalized.", 3066993)</code></pre>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tab-scraper">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <span class="file-name">resilient_scraper.py</span>
+                            <button class="copy-btn" data-target="code-scraper">
+                                <i data-lucide="copy"></i>
+                                <span>Copy Code</span>
+                            </button>
+                        </div>
+                        <pre><code class="language-python" id="code-scraper">import requests
+from urllib3.util import Retry
+from requests.adapters import HTTPAdapter
+
+def create_resilient_session(retries=5, backoff=2.0) -> requests.Session:
+    """Creates a requests Session pre-configured with exponential backoff retries."""
+    session = requests.Session()
+    retry_strategy = Retry(
+        total=retries,
+        backoff_factor=backoff,
+        status_forcelist=[429, 500, 502, 503, 504],
+        allowed_methods=["HEAD", "GET", "OPTIONS", "POST"]
+    )
+    adapter = HTTPAdapter(max_retries=retry_strategy)
+    session.mount("https://", adapter)
+    session.mount("http://", adapter)
+    return session
+
+# Instant Usage:
+# client = create_resilient_session()
+# data = client.get("https://api.external.service/data").json()
+# print("✔ Successfully parsed with resilient backup retry layers.")</code></pre>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tab-notifier">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <span class="file-name">stripe_alert_listener.py</span>
+                            <button class="copy-btn" data-target="code-notifier">
+                                <i data-lucide="copy"></i>
+                                <span>Copy Code</span>
+                            </button>
+                        </div>
+                        <pre><code class="language-python" id="code-notifier">from http.server import BaseHTTPRequestHandler, HTTPServer
+import json
+
+class StripeWebhookHandler(BaseHTTPRequestHandler):
+    def do_POST(self):
+        """Simplest handler to receive Stripe checkout notifications."""
+        content_length = int(self.headers['Content-Length'])
+        post_data = self.rfile.read(content_length)
+        event = json.loads(post_data.decode('utf-8'))
+        
+        if event.get('type') == 'checkout.session.completed':
+            session = event['data']['object']
+            customer_email = session.get('customer_details', {}).get('email')
+            amount = session.get('amount_total', 0) / 100
+            print(f"💰 Sale! Received ${amount:.2f} from {customer_email}")
+            
+        self.send_response(200)
+        self.end_headers()
+
+def start_server(port=8080):
+    server = HTTPServer(('0.0.0.0', port), StripeWebhookHandler)
+    print(f"📡 PulseKit Webhook Receiver listening on port {port}...")
+    server.serve_forever()
+
+# Instant Usage:
+# start_server()</code></pre>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tab-scheduler">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <span class="file-name">micro_scheduler.py</span>
+                            <button class="copy-btn" data-target="code-scheduler">
+                                <i data-lucide="copy"></i>
+                                <span>Copy Code</span>
+                            </button>
+                        </div>
+                        <pre><code class="language-python" id="code-scheduler">import time
+import threading
+
+class MicroScheduler:
+    def __init__(self):
+        self.tasks = []
+
+    def every(self, interval_seconds: float, task_func, *args, **kwargs):
+        """Runs task_func in a background loop without blocking main thread execution."""
+        def wrapper():
+            while True:
+                try:
+                    task_func(*args, **kwargs)
+                except Exception as e:
+                    print(f"❌ Error in scheduled task: {e}")
+                time.sleep(interval_seconds)
+                
+        thread = threading.Thread(target=wrapper, daemon=True)
+        thread.start()
+        self.tasks.append(thread)
+
+# Instant Usage:
+# scheduler = MicroScheduler()
+# scheduler.every(60.0, lambda: print("Checking logs..."))
+# while True: time.sleep(1) # Keep main thread alive</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creator Section -->
+    <section id="creator" class="creator-section">
+        <div class="container creator-card">
+            <div class="creator-photo-wrapper">
+                <img src="https://ui-avatars.com/api/?name=Neo%20Thomas%20Anderson&background=535961&color=fff&format=png&size=200" alt="Neo Thomas Anderson" class="creator-photo">
+            </div>
+            <div class="creator-bio">
+                <span class="creator-label">MEET THE DEVELOPER</span>
+                <h2>Neo Thomas Anderson</h2>
+                <span class="creator-location"><i data-lucide="map-pin"></i> Cairo, Egypt</span>
+                <p>I build clean tools that prioritize velocity, performance, and simplicity. PulseKit was created for developers and system operators who need raw power and immediate integration capabilities without drowning in dependencies or config-file sprawl.</p>
+                <div class="creator-badges">
+                    <span class="tag">Automation Specialist</span>
+                    <span class="tag">Python Dev</span>
+                    <span class="tag">API Integration</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="cta-section">
+        <div class="container cta-box">
+            <h2>Supercharge Your Stack</h2>
+            <p>Gain lifetime access to the entire PulseKit library. Python templates, custom bots, robust cron systems, and API connectors.</p>
+            <div class="cta-actions">
+                <a href="https://whop.com/joined/pulsekit-d90e/" target="_blank" class="btn-primary btn-lg glow-effect">
+                    <span>Unlock Library on Whop</span>
+                    <i data-lucide="lock"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <span class="logo-text">Pulse<span>Kit</span></span>
+                <p>© 2026 PulseKit. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#features">Features</a>
+                <a href="#code-showcase">Code Library</a>
+                <a href="https://whop.com/joined/pulsekit-d90e/" target="_blank">Whop Store</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PrismJS & Copy Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
